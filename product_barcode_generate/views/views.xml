@@ -1,0 +1,20 @@
+<openerp>
+  <data> 
+
+    <record id="inherited_product_template_view" model="ir.ui.view">
+      <field name="name">inherited.product.product.view</field>
+      <field name="model">product.template</field>
+      <field name="inherit_id" ref="product.product_template_only_form_view"/>
+      <field name="arch" type="xml">
+          <xpath expr="//div[@class='oe_title']" position="after">
+            <div style="float:right;margin:-25px 0px;">
+              <field name="barcode_img" widget="image"/>
+            </div>
+          </xpath>
+      </field>
+    </record>
+   
+
+
+  </data>
+</openerp>
